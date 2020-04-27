@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "StorylyApp",
+    "slug": "StorylyApp",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "https://storyly.io/wp-content/uploads/2020/04/storyllydark.png",
+    "splash": {
+      "image": "https://storyly.io/wp-content/uploads/2020/04/storyllydark.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "sdkVersion": "37.0.0",
+    "isDetached": true,
+    "detach": {
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.15.0-sdk37.0.0-25317bc5-e70a-4ffb-b59f-8e2b6fcdd8ce.tar.gz"
+    },
+    "scheme": "expe830105f1ca94512be85ac2f95ca872e",
+    "android": {
+      "package": "storyly.app",
+      "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
+      "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
+    }
+  }
+}

@@ -1,0 +1,1240 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="storyly.app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml
+10
+11    <permission
+11-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:7:3-9:42
+12        android:name="storyly.app.permission.C2D_MESSAGE"
+12-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:8:5-54
+13        android:protectionLevel="signature" />
+13-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:9:5-40
+14
+15    <!-- These are required permissions to make the app run -->
+16    <uses-permission android:name="storyly.app.permission.C2D_MESSAGE" />
+16-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:12:3-72
+16-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:12:20-69
+17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+17-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:13:3-80
+17-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:13:20-77
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:14:3-77
+18-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:14:20-74
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:15:3-65
+19-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:15:20-62
+20    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+20-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:16:3-76
+20-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:16:20-73
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:17:3-66
+21-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:17:20-63
+22
+23    <!-- ADD PERMISSIONS HERE -->
+24    <!-- BEGIN OPTIONAL PERMISSIONS -->
+25    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+25-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:21:3-73
+25-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:21:20-70
+26    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+26-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:22:3-78
+26-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:22:20-75
+27    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+27-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:23:3-73
+27-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:23:20-70
+28    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+28-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:24:3-72
+28-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:24:20-69
+29    <uses-permission android:name="android.permission.VIBRATE" />
+29-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:25:3-64
+29-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:25:20-61
+30    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+30-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:26:3-86
+30-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:26:20-83
+31    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+31-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:27:3-78
+31-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:27:20-75
+32
+33    <!-- These require runtime permissions on M -->
+34    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+34-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:30:3-79
+34-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:30:20-76
+35    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+35-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:31:3-77
+35-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:31:20-74
+36    <uses-permission android:name="android.permission.CAMERA" />
+36-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:32:3-63
+36-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:32:20-60
+37    <uses-permission android:name="android.permission.READ_CONTACTS" />
+37-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:33:3-70
+37-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:33:20-67
+38    <uses-permission android:name="android.permission.READ_CALENDAR" />
+38-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:34:3-70
+38-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:34:20-67
+39    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+39-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:35:3-71
+39-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:35:20-68
+40    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+40-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:36:3-78
+40-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:36:20-75
+41    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+41-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:37:3-69
+41-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:37:20-66
+42    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+42-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:38:3-79
+42-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:38:20-76
+43    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+43-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:39:3-71
+43-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:39:20-68
+44    <!-- END OPTIONAL PERMISSIONS -->
+45
+46
+47    <!-- ADD TEST PERMISSIONS HERE -->
+48
+49    <uses-feature
+49-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:44:3-77
+50        android:glEsVersion="0x00020000"
+50-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:44:17-49
+51        android:required="true" />
+51-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:44:50-74
+52    <uses-feature
+52-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:45:3-85
+53        android:name="android.software.leanback"
+53-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:45:17-57
+54        android:required="false" />
+54-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:45:58-82
+55    <uses-feature
+55-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:46:3-88
+56        android:name="android.hardware.touchscreen"
+56-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:46:17-60
+57        android:required="false" />
+57-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:46:61-85
+58
+59    <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
+60    <supports-screens
+60-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:13:5-19:24
+61        android:anyDensity="true"
+61-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:14:9-34
+62        android:largeScreens="true"
+62-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:15:9-36
+63        android:normalScreens="true"
+63-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:16:9-37
+64        android:smallScreens="true"
+64-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:17:9-36
+65        android:xlargeScreens="true" >
+65-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:18:9-37
+66    </supports-screens>
+67
+68    <uses-permission android:name="host.exp.exponent.permission.C2D_MESSAGE" /> <!-- Used by react-native-netinfo module -->
+68-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:26:5-80
+68-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:26:22-77
+69    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+69-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:34:5-76
+69-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:34:22-73
+70
+71    <uses-feature
+71-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:47:5-49:36
+72        android:name="android.hardware.camera"
+72-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:48:9-47
+73        android:required="false" />
+73-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:49:9-33
+74    <uses-feature
+74-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:50:5-52:36
+75        android:name="android.hardware.camera.autofocus"
+75-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:51:9-57
+76        android:required="false" />
+76-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:52:9-33
+77    <uses-feature
+77-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:53:5-55:36
+78        android:name="android.hardware.location"
+78-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:54:9-49
+79        android:required="false" />
+79-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:55:9-33
+80    <uses-feature
+80-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:56:5-58:36
+81        android:name="android.hardware.location.gps"
+81-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:57:9-53
+82        android:required="false" />
+82-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:58:9-33
+83    <uses-feature
+83-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:59:5-61:36
+84        android:name="android.hardware.location.network"
+84-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:60:9-57
+85        android:required="false" />
+85-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:61:9-33
+86    <uses-feature
+86-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:62:5-64:36
+87        android:name="android.hardware.wifi"
+87-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:63:9-45
+88        android:required="false" />
+88-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:64:9-33
+89    <uses-feature
+89-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:65:5-67:36
+90        android:name="android.hardware.microphone"
+90-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:66:9-51
+91        android:required="false" />
+91-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:67:9-33
+92    <uses-feature
+92-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:68:5-70:36
+93        android:name="android.hardware.telephony"
+93-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:69:9-50
+94        android:required="false" />
+94-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:70:9-33
+95    <uses-feature
+95-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:71:5-73:36
+96        android:name="android.hardware.bluetooth"
+96-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:72:9-50
+97        android:required="false" />
+97-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:73:9-33
+98
+99    <uses-permission android:name="android.permission.STORAGE" />
+99-->[:expo-file-system] /home/simge/StorylyApp/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-66
+99-->[:expo-file-system] /home/simge/StorylyApp/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-63
+100    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- for android -->
+100-->[:expo-location] /home/simge/StorylyApp/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-77
+100-->[:expo-location] /home/simge/StorylyApp/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-74
+101    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+102    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+103    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+104    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+105    <!-- for Samsung -->
+106    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+106-->[me.leolin:ShortcutBadger:1.1.4] /home/simge/.gradle/caches/transforms-2/files-2.1/ee8b68f3d96ef97a75df95d3152d79da/ShortcutBadger-1.1.4/AndroidManifest.xml:19:5-86
+106-->[me.leolin:ShortcutBadger:1.1.4] /home/simge/.gradle/caches/transforms-2/files-2.1/ee8b68f3d96ef97a75df95d3152d79da/ShortcutBadger-1.1.4/AndroidManifest.xml:19:22-83
+107    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+107-->[me.leolin:ShortcutBadger:1.1.4] /home/simge/.gradle/caches/transforms-2/files-2.1/ee8b68f3d96ef97a75df95d3152d79da/ShortcutBadger-1.1.4/AndroidManifest.xml:20:5-87
+107-->[me.leolin:ShortcutBadger:1.1.4] /home/simge/.gradle/caches/transforms-2/files-2.1/ee8b68f3d96ef97a75df95d3152d79da/ShortcutBadger-1.1.4/AndroidManifest.xml:20:22-84
+108    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+108-->[me.leolin:ShortcutBadger:1.1.4] /home/simge/.gradle/caches/transforms-2/files-2.1/ee8b68f3d96ef97a75df95d3152d79da/ShortcutBadger-1.1.4/AndroidManifest.xml:23:5-81
+108-->[me.leolin:ShortcutBadger:1.1.4] /home/simge/.gradle/caches/transforms-2/files-2.1/ee8b68f3d96ef97a75df95d3152d79da/ShortcutBadger-1.1.4/AndroidManifest.xml:23:22-78
+109    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+109-->[me.leolin:ShortcutBadger:1.1.4] /home/simge/.gradle/caches/transforms-2/files-2.1/ee8b68f3d96ef97a75df95d3152d79da/ShortcutBadger-1.1.4/AndroidManifest.xml:24:5-83
+109-->[me.leolin:ShortcutBadger:1.1.4] /home/simge/.gradle/caches/transforms-2/files-2.1/ee8b68f3d96ef97a75df95d3152d79da/ShortcutBadger-1.1.4/AndroidManifest.xml:24:22-80
+110    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" /> <!-- for apex -->
+110-->[me.leolin:ShortcutBadger:1.1.4] /home/simge/.gradle/caches/transforms-2/files-2.1/ee8b68f3d96ef97a75df95d3152d79da/ShortcutBadger-1.1.4/AndroidManifest.xml:27:5-88
+110-->[me.leolin:ShortcutBadger:1.1.4] /home/simge/.gradle/caches/transforms-2/files-2.1/ee8b68f3d96ef97a75df95d3152d79da/ShortcutBadger-1.1.4/AndroidManifest.xml:27:22-85
+111    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+111-->[me.leolin:ShortcutBadger:1.1.4] /home/simge/.gradle/caches/transforms-2/files-2.1/ee8b68f3d96ef97a75df95d3152d79da/ShortcutBadger-1.1.4/AndroidManifest.xml:30:5-84
+111-->[me.leolin:ShortcutBadger:1.1.4] /home/simge/.gradle/caches/transforms-2/files-2.1/ee8b68f3d96ef97a75df95d3152d79da/ShortcutBadger-1.1.4/AndroidManifest.xml:30:22-81
+112    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+112-->[me.leolin:ShortcutBadger:1.1.4] /home/simge/.gradle/caches/transforms-2/files-2.1/ee8b68f3d96ef97a75df95d3152d79da/ShortcutBadger-1.1.4/AndroidManifest.xml:33:5-83
+112-->[me.leolin:ShortcutBadger:1.1.4] /home/simge/.gradle/caches/transforms-2/files-2.1/ee8b68f3d96ef97a75df95d3152d79da/ShortcutBadger-1.1.4/AndroidManifest.xml:33:22-80
+113    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+113-->[io.nlopez.smartlocation:library:3.2.11] /home/simge/.gradle/caches/transforms-2/files-2.1/ffac352c03d186daf3d8ea9c1c319c62/jetified-library-3.2.11/AndroidManifest.xml:15:5-98
+113-->[io.nlopez.smartlocation:library:3.2.11] /home/simge/.gradle/caches/transforms-2/files-2.1/ffac352c03d186daf3d8ea9c1c319c62/jetified-library-3.2.11/AndroidManifest.xml:15:22-95
+114    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+114-->[io.nlopez.smartlocation:library:3.2.11] /home/simge/.gradle/caches/transforms-2/files-2.1/ffac352c03d186daf3d8ea9c1c319c62/jetified-library-3.2.11/AndroidManifest.xml:16:5-94
+114-->[io.nlopez.smartlocation:library:3.2.11] /home/simge/.gradle/caches/transforms-2/files-2.1/ffac352c03d186daf3d8ea9c1c319c62/jetified-library-3.2.11/AndroidManifest.xml:16:22-91
+115    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+115-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:26:5-110
+115-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:26:22-107
+116
+117    <application
+117-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:48:3-371:17
+118        android:name="host.exp.exponent.MainApplication"
+118-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:49:5-36
+119        android:allowBackup="true"
+119-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:50:5-31
+120        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+120-->[androidx.core:core:1.3.0-beta01] /home/simge/.gradle/caches/transforms-2/files-2.1/3237a14cb7823717fc3cfff449f8e1a1/core-1.3.0-beta01/AndroidManifest.xml:24:18-86
+121        android:debuggable="true"
+122        android:icon="@mipmap/ic_launcher"
+122-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:51:5-39
+123        android:label="@string/app_name"
+123-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:52:5-37
+124        android:largeHeap="true"
+124-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:53:5-29
+125        android:testOnly="true"
+126        android:usesCleartextTraffic="true" >
+126-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:54:5-40
+127        <activity
+127-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:56:5-61:16
+128            android:name="host.exp.exponent.LauncherActivity"
+128-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:57:7-39
+129            android:exported="true"
+129-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:58:7-30
+130            android:launchMode="singleTask"
+130-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:59:7-38
+131            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+131-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:60:7-66
+132        </activity>
+133        <activity
+133-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:63:5-68:16
+134            android:name="host.exp.exponent.experience.ExperienceActivity"
+134-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:64:7-52
+135            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+135-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:65:7-77
+136            android:theme="@style/Theme.Exponent.Light"
+136-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:66:7-50
+137            android:windowSoftInputMode="adjustResize" >
+137-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:67:7-49
+138        </activity>
+139        <activity
+139-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:70:5-90:16
+140            android:name="host.exp.exponent.MainActivity"
+140-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:71:7-35
+141            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+141-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:73:7-77
+142            android:launchMode="singleTask"
+142-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:72:7-38
+143            android:theme="@style/Theme.Exponent.Splash"
+143-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:74:7-51
+144            android:windowSoftInputMode="adjustResize" >
+144-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:75:7-49
+145            <intent-filter>
+145-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:76:7-83:23
+146                <data android:scheme="expe830105f1ca94512be85ac2f95ca872e" />
+146-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:77:9-69
+146-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:77:15-67
+147
+148                <action android:name="android.intent.action.VIEW" />
+148-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:79:9-60
+148-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:79:17-58
+149
+150                <category android:name="android.intent.category.DEFAULT" />
+150-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:81:9-67
+150-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:81:19-65
+151                <category android:name="android.intent.category.BROWSABLE" />
+151-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:82:9-69
+151-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:82:19-67
+152            </intent-filter>
+153            <intent-filter>
+153-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:84:7-88:23
+154                <action android:name="android.intent.action.MAIN" />
+154-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:85:9-60
+154-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:85:17-58
+155
+156                <category android:name="android.intent.category.LAUNCHER" />
+156-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:87:9-68
+156-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:87:19-66
+157            </intent-filter>
+158            <!-- ADD DETACH APP SPECIFIC INTENT FILTERS -->
+159        </activity>
+160        <activity
+160-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:92:5-98:16
+161            android:name="host.exp.exponent.experience.HomeActivity"
+161-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:93:7-46
+162            android:label="@string/app_name"
+162-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:94:7-39
+163            android:launchMode="singleTask"
+163-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:95:7-38
+164            android:screenOrientation="portrait"
+164-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:96:7-43
+165            android:theme="@style/Theme.Exponent.Light.LightStatusBar" >
+165-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:97:7-65
+166        </activity>
+167        <activity
+167-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:100:5-109:15
+168            android:name="host.exp.exponent.experience.TvActivity"
+168-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:101:7-44
+169            android:label="@string/app_name"
+169-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:102:7-39
+170            android:screenOrientation="landscape"
+170-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:104:7-44
+171            android:theme="@style/Theme.Exponent.Light" >
+171-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:103:7-50
+172            <intent-filter>
+172-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:105:6-108:22
+173                <action android:name="android.intent.action.MAIN" />
+173-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:85:9-60
+173-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:85:17-58
+174
+175                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+175-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:107:8-77
+175-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:107:18-74
+176            </intent-filter>
+177        </activity>
+178        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+178-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:113:5-81
+178-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:113:15-79
+179        <!-- WHEN_PREPARING_SHELL_REMOVE_FROM_HERE -->
+180        <!-- ADD DEV SETTINGS HERE -->
+181        <!-- BEGIN_SDK_37 -->
+182        <activity android:name="abi37_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+182-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:117:5-91
+182-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:117:15-89
+183        <!-- END_SDK_37 -->
+184        <!-- BEGIN_SDK_36 -->
+185        <activity android:name="abi36_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+185-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:120:5-91
+185-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:120:15-89
+186        <!-- END_SDK_36 -->
+187        <!-- BEGIN_SDK_35 -->
+188        <activity android:name="abi35_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+188-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:123:5-91
+188-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:123:15-89
+189        <!-- END_SDK_35 -->
+190        <!-- BEGIN_SDK_34 -->
+191        <activity android:name="abi34_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+191-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:126:5-91
+191-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:126:15-89
+192        <!-- END_SDK_34 -->
+193        <!-- WHEN_PREPARING_SHELL_REMOVE_TO_HERE -->
+194
+195        <activity android:name="net.openid.appauth.RedirectUriReceiverActivity" >
+195-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:130:5-139:16
+195-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:131:9-70
+196            <intent-filter>
+196-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:133:7-138:23
+197                <action android:name="android.intent.action.VIEW" />
+197-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:79:9-60
+197-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:79:17-58
+198
+199                <category android:name="android.intent.category.DEFAULT" />
+199-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:81:9-67
+199-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:81:19-65
+200                <category android:name="android.intent.category.BROWSABLE" />
+200-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:82:9-69
+200-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:82:19-67
+201
+202                <data
+202-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:77:9-69
+203                    android:path="oauthredirect"
+203-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:137:44-72
+204                    android:scheme="storyly.app" />
+204-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:77:15-67
+205            </intent-filter>
+206        </activity>
+207
+208        <!-- START OF STRIPE SCHEMES -->
+209        <activity
+209-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:142:5-153:16
+210            android:name="expo.modules.payments.stripe.RedirectUriReceiver"
+210-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:145:9-72
+211            android:exported="true"
+211-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:143:9-32
+212            android:launchMode="singleTask"
+212-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:144:9-40
+213            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+213-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:146:9-79
+214            <intent-filter>
+214-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:147:9-152:25
+215                <action android:name="android.intent.action.VIEW" />
+215-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:79:9-60
+215-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:79:17-58
+216
+217                <category android:name="android.intent.category.DEFAULT" />
+217-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:81:9-67
+217-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:81:19-65
+218                <category android:name="android.intent.category.BROWSABLE" />
+218-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:82:9-69
+218-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:82:19-67
+219
+220                <data android:scheme="expo.modules.payments.stripe.0a6525dd-43e8-40f9-8fd4-75953c2d37d2" />
+220-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:77:9-69
+220-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:77:15-67
+221            </intent-filter>
+222        </activity>
+223        <!-- Versioned Activity for Stripe -->
+224        <!-- BEGIN_SDK_37 -->
+225        <activity
+225-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:156:5-167:16
+226            android:name="abi37_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+226-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:159:7-80
+227            android:exported="true"
+227-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:157:7-30
+228            android:launchMode="singleTask"
+228-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:158:7-38
+229            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+229-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:160:7-77
+230            <intent-filter>
+230-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:161:7-166:23
+231                <action android:name="android.intent.action.VIEW" />
+231-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:79:9-60
+231-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:79:17-58
+232
+233                <category android:name="android.intent.category.DEFAULT" />
+233-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:81:9-67
+233-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:81:19-65
+234                <category android:name="android.intent.category.BROWSABLE" />
+234-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:82:9-69
+234-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:82:19-67
+235
+236                <data android:scheme="abi37_0_0.expo.modules.payments.stripe" />
+236-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:77:9-69
+236-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:77:15-67
+237            </intent-filter>
+238        </activity>
+239        <!-- END_SDK_37 -->
+240        <!-- BEGIN_SDK_36 -->
+241        <activity
+241-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:170:5-181:16
+242            android:name="abi36_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+242-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:173:7-80
+243            android:exported="true"
+243-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:171:7-30
+244            android:launchMode="singleTask"
+244-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:172:7-38
+245            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+245-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:174:7-77
+246            <intent-filter>
+246-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:175:7-180:23
+247                <action android:name="android.intent.action.VIEW" />
+247-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:79:9-60
+247-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:79:17-58
+248
+249                <category android:name="android.intent.category.DEFAULT" />
+249-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:81:9-67
+249-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:81:19-65
+250                <category android:name="android.intent.category.BROWSABLE" />
+250-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:82:9-69
+250-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:82:19-67
+251
+252                <data android:scheme="abi36_0_0.expo.modules.payments.stripe" />
+252-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:77:9-69
+252-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:77:15-67
+253            </intent-filter>
+254        </activity>
+255        <!-- END_SDK_36 -->
+256        <!-- BEGIN_SDK_35 -->
+257        <activity
+257-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:184:3-195:14
+258            android:name="abi35_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+258-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:187:4-77
+259            android:exported="true"
+259-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:185:4-27
+260            android:launchMode="singleTask"
+260-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:186:4-35
+261            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+261-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:188:4-74
+262            <intent-filter>
+262-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:189:4-194:20
+263                <action android:name="android.intent.action.VIEW" />
+263-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:79:9-60
+263-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:79:17-58
+264
+265                <category android:name="android.intent.category.DEFAULT" />
+265-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:81:9-67
+265-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:81:19-65
+266                <category android:name="android.intent.category.BROWSABLE" />
+266-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:82:9-69
+266-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:82:19-67
+267
+268                <data android:scheme="abi35_0_0.expo.modules.payments.stripe" />
+268-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:77:9-69
+268-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:77:15-67
+269            </intent-filter>
+270        </activity>
+271        <!-- END_SDK_35 -->
+272        <!-- BEGIN_SDK_34 -->
+273        <activity
+273-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:198:5-209:16
+274            android:name="abi34_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+274-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:201:7-80
+275            android:exported="true"
+275-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:199:7-30
+276            android:launchMode="singleTask"
+276-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:200:7-38
+277            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+277-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:202:7-77
+278            <intent-filter>
+278-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:203:7-208:23
+279                <action android:name="android.intent.action.VIEW" />
+279-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:79:9-60
+279-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:79:17-58
+280
+281                <category android:name="android.intent.category.DEFAULT" />
+281-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:81:9-67
+281-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:81:19-65
+282                <category android:name="android.intent.category.BROWSABLE" />
+282-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:82:9-69
+282-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:82:19-67
+283
+284                <data android:scheme="abi34_0_0.expo.modules.payments.stripe" />
+284-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:77:9-69
+284-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:77:15-67
+285            </intent-filter>
+286        </activity>
+287        <!-- END_SDK_34 -->
+288        <!-- END OF STRIPE SCHEMES -->
+289
+290        <activity
+290-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:213:5-217:16
+291            android:name="host.exp.exponent.experience.ErrorActivity"
+291-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:214:7-47
+292            android:screenOrientation="portrait"
+292-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:216:7-43
+293            android:theme="@style/Theme.Exponent.Dark" >
+293-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:215:7-49
+294        </activity>
+295        <activity
+295-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:219:5-223:16
+296            android:name="host.exp.exponent.experience.InfoActivity"
+296-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:220:7-46
+297            android:screenOrientation="portrait"
+297-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:221:7-43
+298            android:theme="@style/Theme.Exponent.Light" >
+298-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:222:7-50
+299        </activity>
+300        <activity
+300-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:225:5-230:39
+301            android:name="com.facebook.FacebookActivity"
+301-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:226:7-51
+302            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+302-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:227:7-90
+303            android:label="@string/app_name"
+303-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:228:7-39
+304            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+304-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:229:7-66
+305        <activity
+305-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:232:5-241:16
+306            android:name="com.facebook.CustomTabActivity"
+306-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:233:7-52
+307            android:exported="true" >
+307-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:234:7-30
+308            <intent-filter>
+308-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:235:7-240:23
+309                <action android:name="android.intent.action.VIEW" />
+309-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:79:9-60
+309-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:79:17-58
+310
+311                <category android:name="android.intent.category.DEFAULT" />
+311-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:81:9-67
+311-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:81:19-65
+312                <category android:name="android.intent.category.BROWSABLE" />
+312-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:82:9-69
+312-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:82:19-67
+313                <!-- REPLACE WITH FACEBOOK SCHEME -->
+314            </intent-filter>
+315        </activity>
+316        <activity
+316-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:243:5-247:69
+317            android:name="com.facebook.ads.InterstitialAdActivity"
+317-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:244:7-61
+318            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+318-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:245:7-90
+319            android:label="@string/app_name"
+319-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:246:7-39
+320            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+320-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:247:7-66
+321
+322        <service
+322-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:249:5-251:34
+323            android:name="host.exp.exponent.ExponentIntentService"
+323-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:250:7-44
+324            android:exported="false" />
+324-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:251:7-31
+325
+326        <!-- Analytics -->
+327        <receiver
+327-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:254:5-260:16
+328            android:name="host.exp.exponent.referrer.InstallReferrerReceiver"
+328-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:255:7-72
+329            android:exported="true" >
+329-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:256:7-30
+330            <intent-filter>
+330-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:257:7-259:23
+331                <action android:name="com.android.vending.INSTALL_REFERRER" />
+331-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:258:9-71
+331-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:258:17-68
+332            </intent-filter>
+333        </receiver>
+334
+335        <!--
+336    This crashes: https://code.google.com/p/analytics-issues/issues/detail?id=667
+337    TODO: turn it back on when it's fixed
+338    <service
+339      android:name="com.google.android.gms.analytics.CampaignTrackingService"
+340      android:enabled="true"
+341      android:exported="false" />
+342        -->
+343
+344        <receiver
+344-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:270:5-275:16
+345            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+345-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:270:15-80
+346            android:enabled="true"
+346-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:271:15-37
+347            android:exported="false" >
+347-->[com.google.android.gms:play-services-analytics:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/8efc856ea1acacfebeb537443f338d80/play-services-analytics-17.0.0/AndroidManifest.xml:33:13-37
+348            <intent-filter>
+348-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:272:7-274:23
+349                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+349-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:273:9-86
+349-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:273:17-83
+350            </intent-filter>
+351        </receiver>
+352
+353        <service
+353-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:277:5-279:40
+354            android:name="com.google.android.gms.analytics.AnalyticsService"
+354-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:277:14-78
+355            android:enabled="true"
+355-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:278:14-36
+356            android:exported="false" />
+356-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:279:14-38
+357
+358        <!-- GCM -->
+359        <receiver
+359-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:282:5-292:16
+360            android:name="com.google.android.gms.gcm.GcmReceiver"
+360-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:283:7-60
+361            android:exported="true"
+361-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:284:7-30
+362            android:permission="com.google.android.c2dm.permission.SEND" >
+362-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:285:7-67
+363            <intent-filter>
+363-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:286:7-291:23
+364                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+364-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:287:9-72
+364-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:287:17-70
+365                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+365-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:288:9-77
+365-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:288:17-75
+366
+367                <category android:name="storyly.app" />
+367-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:290:9-47
+367-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:290:19-45
+368            </intent-filter>
+369        </receiver>
+370
+371        <service
+371-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:294:5-300:15
+372            android:name="host.exp.exponent.gcm.ExponentGcmListenerService"
+372-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:295:7-53
+373            android:exported="false" >
+373-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:296:7-31
+374            <intent-filter>
+374-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:297:7-299:23
+375                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+375-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:287:9-72
+375-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:287:17-70
+376            </intent-filter>
+377        </service>
+378        <service
+378-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:301:5-307:15
+379            android:name="host.exp.exponent.gcm.ExponentInstanceIDListenerService"
+379-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:302:7-60
+380            android:exported="false" >
+380-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:303:7-31
+381            <intent-filter>
+381-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:304:7-306:23
+382                <action android:name="com.google.android.gms.iid.InstanceID" />
+382-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:305:9-71
+382-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:305:17-69
+383            </intent-filter>
+384        </service>
+385        <service
+385-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:308:5-311:15
+386            android:name="host.exp.exponent.gcm.GcmRegistrationIntentService"
+386-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:309:7-55
+387            android:exported="false" >
+387-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:310:7-31
+388        </service>
+389
+390        <!-- FCM -->
+391        <service android:name="host.exp.exponent.fcm.ExpoFcmMessagingService" >
+391-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:314:5-319:15
+391-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:315:7-50
+392            <intent-filter>
+392-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:316:7-318:23
+393                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+393-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:317:9-69
+393-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:317:17-67
+394            </intent-filter>
+395        </service>
+396
+397        <meta-data
+397-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:320:5-322:62
+398            android:name="com.google.firebase.messaging.default_notification_icon"
+398-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:321:7-77
+399            android:resource="@drawable/shell_notification_icon" />
+399-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:322:7-59
+400        <meta-data
+400-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:323:5-325:47
+401            android:name="com.google.firebase.messaging.default_notification_color"
+401-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:324:7-78
+402            android:resource="@color/colorAccent" />
+402-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:325:7-44
+403
+404        <service
+404-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:326:5-329:15
+405            android:name="host.exp.exponent.fcm.FcmRegistrationIntentService"
+405-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:327:7-55
+406            android:exported="false" >
+406-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:328:7-31
+407        </service>
+408
+409        <!-- ImagePicker native module -->
+410        <activity
+410-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:332:5-335:16
+411            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+411-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:333:7-70
+412            android:theme="@style/Base.Theme.AppCompat" >
+412-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:334:7-50
+413        </activity>
+414
+415        <!-- ADD FABRIC CONFIG HERE -->
+416        <!-- BEGIN FABRIC CONFIG -->
+417        <meta-data
+417-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:340:5-342:65
+418            android:name="io.fabric.ApiKey"
+418-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:341:7-38
+419            android:value="a25fafe9f9edee11a9882b32e0cd7a26df6e2c42" />
+419-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:342:7-63
+420        <!-- END FABRIC CONFIG -->
+421
+422
+423        <!-- ADD GOOGLE MAPS CONFIG HERE -->
+424        <!-- BEGIN GOOGLE MAPS CONFIG -->
+425        <meta-data
+425-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:347:5-349:64
+426            android:name="com.google.android.geo.API_KEY"
+426-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:348:7-52
+427            android:value="AIzaSyDh7eDB9snEFSYtf-k0gfxA45HFoR0L--I" />
+427-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:349:7-62
+428        <!-- END GOOGLE MAPS CONFIG -->
+429
+430
+431        <!-- ADD GOOGLE MOBILE ADS CONFIG HERE -->
+432        <!-- BEGIN GOOGLE MOBILE ADS CONFIG -->
+433        <meta-data
+433-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:354:5-356:63
+434            android:name="com.google.android.gms.ads.APPLICATION_ID"
+434-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:355:7-63
+435            android:value="ca-app-pub-3940256099942544~3347511713" />
+435-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:356:7-61
+436        <meta-data
+436-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:357:5-107
+437            android:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT"
+437-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:357:16-84
+438            android:value="true" />
+438-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:357:85-105
+439        <!-- END GOOGLE MOBILE ADS CONFIG -->
+440
+441
+442        <!-- ADD BRANCH CONFIG HERE -->
+443
+444
+445        <!-- ADD FACEBOOK APP ID CONFIG HERE -->
+446        <!-- ADD FACEBOOK APP DISPLAY NAME CONFIG HERE -->
+447        <!-- Tags below need to be in one line with no whitespace after android:value -->
+448        <!-- in order for XDL to be able to replace values in them -->
+449        <meta-data
+449-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:366:5-95
+450            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+450-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:366:16-71
+451            android:value="false" />
+451-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:366:72-93
+452        <meta-data
+452-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:367:5-87
+453            android:name="com.facebook.sdk.AutoInitEnabled"
+453-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:367:16-63
+454            android:value="false" />
+454-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:367:64-85
+455        <meta-data
+455-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:368:5-101
+456            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+456-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:368:16-77
+457            android:value="false" />
+457-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:368:78-99
+458        <meta-data
+458-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:370:5-109
+459            android:name="standaloneStripeScheme"
+459-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:370:16-53
+460            android:value="0a6525dd-43e8-40f9-8fd4-75953c2d37d2" />
+460-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:370:54-106
+461        <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
+462        <!-- Scheduled notifications -->
+463        <receiver
+463-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:79:9-81:40
+464            android:name="host.exp.exponent.notifications.ScheduledNotificationReceiver"
+464-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:80:13-89
+465            android:exported="false" />
+465-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:81:13-37
+466        <receiver
+466-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:82:9-92:20
+467            android:name="host.exp.exponent.notifications.receivers.SchedulingTriggerReceiver"
+467-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:83:13-95
+468            android:exported="true" >
+468-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:84:13-36
+469            <intent-filter>
+469-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:85:13-91:29
+470                <action android:name="android.intent.action.REBOOT" />
+470-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:86:17-71
+470-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:86:25-68
+471                <action android:name="android.intent.action.BOOT_COMPLETED" />
+471-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:87:17-79
+471-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:87:25-76
+472                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+472-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:88:17-81
+472-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:88:25-78
+473                <action android:name="android.intent.action.TIME_CHANGED" />
+473-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:89:17-77
+473-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:89:25-74
+474                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+474-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:90:17-82
+474-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:90:25-79
+475            </intent-filter>
+476        </receiver> <!-- WHEN_VERSIONING_REMOVE_TO_HERE -->
+477        <provider
+477-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:96:9-104:20
+478            android:name="androidx.core.content.FileProvider"
+478-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:97:13-62
+479            android:authorities="storyly.app.provider"
+479-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:98:13-60
+480            android:exported="false"
+480-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:99:13-37
+481            android:grantUriPermissions="true" >
+481-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:100:13-47
+482            <meta-data
+482-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:101:13-103:58
+483                android:name="android.support.FILE_PROVIDER_PATHS"
+483-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:102:17-67
+484                android:resource="@xml/provider_paths" />
+484-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:103:17-55
+485        </provider>
+486        <provider
+486-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:105:9-113:20
+487            android:name="versioned.host.exp.exponent.modules.api.components.webview.RNCWebViewFileProvider"
+487-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:106:13-109
+488            android:authorities="storyly.app.fileprovider"
+488-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:107:13-64
+489            android:exported="false"
+489-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:108:13-37
+490            android:grantUriPermissions="true" >
+490-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:109:13-47
+491            <meta-data
+491-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:101:13-103:58
+492                android:name="android.support.FILE_PROVIDER_PATHS"
+492-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:102:17-67
+493                android:resource="@xml/provider_paths" />
+493-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:103:17-55
+494        </provider>
+495        <provider
+495-->[:expo-file-system] /home/simge/StorylyApp/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-27:20
+496            android:name="expo.modules.filesystem.FileSystemFileProvider"
+496-->[:expo-file-system] /home/simge/StorylyApp/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-74
+497            android:authorities="storyly.app.FileSystemFileProvider"
+497-->[:expo-file-system] /home/simge/StorylyApp/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-74
+498            android:exported="false"
+498-->[:expo-file-system] /home/simge/StorylyApp/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-37
+499            android:grantUriPermissions="true" >
+499-->[:expo-file-system] /home/simge/StorylyApp/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-47
+500            <meta-data
+500-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:101:13-103:58
+501                android:name="android.support.FILE_PROVIDER_PATHS"
+501-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:102:17-67
+502                android:resource="@xml/file_system_provider_paths" />
+502-->[host.exp.exponent:expoview:37.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/ef6622f2ba1107d72409bb9df6351acf/expoview-37.0.0/AndroidManifest.xml:103:17-55
+503        </provider>
+504
+505        <service
+505-->[:expo-location] /home/simge/StorylyApp/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
+506            android:name="expo.modules.location.services.LocationTaskService"
+506-->[:expo-location] /home/simge/StorylyApp/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-78
+507            android:exported="false" />
+507-->[:expo-location] /home/simge/StorylyApp/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+508
+509        <meta-data
+509-->[com.appsamurai.storyly:storyly:1.1.0] /home/simge/.gradle/caches/transforms-2/files-2.1/d8a561d42e8d3259fe2434be61dfdd08/storyly-1.1.0/AndroidManifest.xml:14:9-16:36
+510            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+510-->[com.appsamurai.storyly:storyly:1.1.0] /home/simge/.gradle/caches/transforms-2/files-2.1/d8a561d42e8d3259fe2434be61dfdd08/storyly-1.1.0/AndroidManifest.xml:15:13-69
+511            android:value="true" />
+511-->[com.appsamurai.storyly:storyly:1.1.0] /home/simge/.gradle/caches/transforms-2/files-2.1/d8a561d42e8d3259fe2434be61dfdd08/storyly-1.1.0/AndroidManifest.xml:16:13-33
+512
+513        <activity
+513-->[com.facebook.android:audience-network-sdk:5.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/4a0c5347e9b1e47a3f34e38f852a7aa5/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:15:9-18:40
+514            android:name="com.facebook.ads.AudienceNetworkActivity"
+514-->[com.facebook.android:audience-network-sdk:5.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/4a0c5347e9b1e47a3f34e38f852a7aa5/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:16:13-68
+515            android:configChanges="keyboardHidden|orientation|screenSize"
+515-->[com.facebook.android:audience-network-sdk:5.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/4a0c5347e9b1e47a3f34e38f852a7aa5/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:17:13-74
+516            android:exported="false" />
+516-->[com.facebook.android:audience-network-sdk:5.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/4a0c5347e9b1e47a3f34e38f852a7aa5/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:18:13-37
+517        <activity
+517-->[com.facebook.android:audience-network-sdk:5.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/4a0c5347e9b1e47a3f34e38f852a7aa5/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:19:9-23:39
+518            android:name="com.facebook.ads.internal.ipc.RemoteANActivity"
+518-->[com.facebook.android:audience-network-sdk:5.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/4a0c5347e9b1e47a3f34e38f852a7aa5/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:20:13-74
+519            android:configChanges="keyboardHidden|orientation|screenSize"
+519-->[com.facebook.android:audience-network-sdk:5.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/4a0c5347e9b1e47a3f34e38f852a7aa5/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:21:13-74
+520            android:exported="false"
+520-->[com.facebook.android:audience-network-sdk:5.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/4a0c5347e9b1e47a3f34e38f852a7aa5/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:22:13-37
+521            android:process=":adnw" />
+521-->[com.facebook.android:audience-network-sdk:5.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/4a0c5347e9b1e47a3f34e38f852a7aa5/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:23:13-36
+522
+523        <service
+523-->[com.facebook.android:audience-network-sdk:5.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/4a0c5347e9b1e47a3f34e38f852a7aa5/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:25:9-27:40
+524            android:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService"
+524-->[com.facebook.android:audience-network-sdk:5.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/4a0c5347e9b1e47a3f34e38f852a7aa5/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:26:13-83
+525            android:exported="false" />
+525-->[com.facebook.android:audience-network-sdk:5.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/4a0c5347e9b1e47a3f34e38f852a7aa5/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:27:13-37
+526        <service
+526-->[com.facebook.android:audience-network-sdk:5.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/4a0c5347e9b1e47a3f34e38f852a7aa5/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:28:9-31:39
+527            android:name="com.facebook.ads.internal.ipc.AdsMessengerService"
+527-->[com.facebook.android:audience-network-sdk:5.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/4a0c5347e9b1e47a3f34e38f852a7aa5/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:29:13-77
+528            android:exported="false"
+528-->[com.facebook.android:audience-network-sdk:5.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/4a0c5347e9b1e47a3f34e38f852a7aa5/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:30:13-37
+529            android:process=":adnw" />
+529-->[com.facebook.android:audience-network-sdk:5.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/4a0c5347e9b1e47a3f34e38f852a7aa5/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:31:13-36
+530
+531        <provider
+531-->[com.squareup.picasso:picasso:2.71828] /home/simge/.gradle/caches/transforms-2/files-2.1/9a88e1baa4a7b62b7383184fefbf3b64/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+532            android:name="com.squareup.picasso.PicassoProvider"
+532-->[com.squareup.picasso:picasso:2.71828] /home/simge/.gradle/caches/transforms-2/files-2.1/9a88e1baa4a7b62b7383184fefbf3b64/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+533            android:authorities="storyly.app.com.squareup.picasso"
+533-->[com.squareup.picasso:picasso:2.71828] /home/simge/.gradle/caches/transforms-2/files-2.1/9a88e1baa4a7b62b7383184fefbf3b64/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+534            android:exported="false" />
+534-->[com.squareup.picasso:picasso:2.71828] /home/simge/.gradle/caches/transforms-2/files-2.1/9a88e1baa4a7b62b7383184fefbf3b64/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+535
+536        <service
+536-->[com.google.android.gms:play-services-analytics:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/8efc856ea1acacfebeb537443f338d80/play-services-analytics-17.0.0/AndroidManifest.xml:40:9-44:72
+537            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+537-->[com.google.android.gms:play-services-analytics:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/8efc856ea1acacfebeb537443f338d80/play-services-analytics-17.0.0/AndroidManifest.xml:41:13-80
+538            android:enabled="true"
+538-->[com.google.android.gms:play-services-analytics:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/8efc856ea1acacfebeb537443f338d80/play-services-analytics-17.0.0/AndroidManifest.xml:42:13-35
+539            android:exported="false"
+539-->[com.google.android.gms:play-services-analytics:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/8efc856ea1acacfebeb537443f338d80/play-services-analytics-17.0.0/AndroidManifest.xml:43:13-37
+540            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
+540-->[com.google.android.gms:play-services-analytics:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/8efc856ea1acacfebeb537443f338d80/play-services-analytics-17.0.0/AndroidManifest.xml:44:13-69
+541        <uses-library
+541-->[com.google.android.gms:play-services-maps:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/b787248afe58504b105f9e0af085e8e1/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+542            android:name="org.apache.http.legacy"
+542-->[com.google.android.gms:play-services-maps:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/b787248afe58504b105f9e0af085e8e1/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+543            android:required="false" />
+543-->[com.google.android.gms:play-services-maps:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/b787248afe58504b105f9e0af085e8e1/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+544
+545        <activity
+545-->[com.google.android.gms:play-services-auth:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/a14ea85dc2e6616e1a291d984a589fc8/play-services-auth-17.0.0/AndroidManifest.xml:23:9-27:75
+546            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+546-->[com.google.android.gms:play-services-auth:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/a14ea85dc2e6616e1a291d984a589fc8/play-services-auth-17.0.0/AndroidManifest.xml:24:13-93
+547            android:excludeFromRecents="true"
+547-->[com.google.android.gms:play-services-auth:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/a14ea85dc2e6616e1a291d984a589fc8/play-services-auth-17.0.0/AndroidManifest.xml:25:13-46
+548            android:exported="false"
+548-->[com.google.android.gms:play-services-auth:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/a14ea85dc2e6616e1a291d984a589fc8/play-services-auth-17.0.0/AndroidManifest.xml:26:13-37
+549            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+549-->[com.google.android.gms:play-services-auth:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/a14ea85dc2e6616e1a291d984a589fc8/play-services-auth-17.0.0/AndroidManifest.xml:27:13-72
+550        <!--
+551            Service handling Google Sign-In user revocation. For apps that do not integrate with
+552            Google Sign-In, this service will never be started.
+553        -->
+554        <service
+554-->[com.google.android.gms:play-services-auth:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/a14ea85dc2e6616e1a291d984a589fc8/play-services-auth-17.0.0/AndroidManifest.xml:33:9-36:110
+555            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+555-->[com.google.android.gms:play-services-auth:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/a14ea85dc2e6616e1a291d984a589fc8/play-services-auth-17.0.0/AndroidManifest.xml:34:13-89
+556            android:exported="true"
+556-->[com.google.android.gms:play-services-auth:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/a14ea85dc2e6616e1a291d984a589fc8/play-services-auth-17.0.0/AndroidManifest.xml:35:13-36
+557            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+557-->[com.google.android.gms:play-services-auth:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/a14ea85dc2e6616e1a291d984a589fc8/play-services-auth-17.0.0/AndroidManifest.xml:36:13-107
+558
+559        <activity
+559-->[net.openid:appauth:0.7.1] /home/simge/.gradle/caches/transforms-2/files-2.1/916f55ab88b8d30b24264fe1e900cd3d/jetified-appauth-0.7.1/AndroidManifest.xml:27:9-31:75
+560            android:name="net.openid.appauth.AuthorizationManagementActivity"
+560-->[net.openid:appauth:0.7.1] /home/simge/.gradle/caches/transforms-2/files-2.1/916f55ab88b8d30b24264fe1e900cd3d/jetified-appauth-0.7.1/AndroidManifest.xml:28:13-78
+561            android:exported="false"
+561-->[net.openid:appauth:0.7.1] /home/simge/.gradle/caches/transforms-2/files-2.1/916f55ab88b8d30b24264fe1e900cd3d/jetified-appauth-0.7.1/AndroidManifest.xml:29:13-37
+562            android:launchMode="singleTask"
+562-->[net.openid:appauth:0.7.1] /home/simge/.gradle/caches/transforms-2/files-2.1/916f55ab88b8d30b24264fe1e900cd3d/jetified-appauth-0.7.1/AndroidManifest.xml:30:13-44
+563            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+563-->[net.openid:appauth:0.7.1] /home/simge/.gradle/caches/transforms-2/files-2.1/916f55ab88b8d30b24264fe1e900cd3d/jetified-appauth-0.7.1/AndroidManifest.xml:31:13-72
+564
+565        <service
+565-->[io.nlopez.smartlocation:library:3.2.11] /home/simge/.gradle/caches/transforms-2/files-2.1/ffac352c03d186daf3d8ea9c1c319c62/jetified-library-3.2.11/AndroidManifest.xml:19:9-21:40
+566            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+566-->[io.nlopez.smartlocation:library:3.2.11] /home/simge/.gradle/caches/transforms-2/files-2.1/ffac352c03d186daf3d8ea9c1c319c62/jetified-library-3.2.11/AndroidManifest.xml:20:13-132
+567            android:exported="false" />
+567-->[io.nlopez.smartlocation:library:3.2.11] /home/simge/.gradle/caches/transforms-2/files-2.1/ffac352c03d186daf3d8ea9c1c319c62/jetified-library-3.2.11/AndroidManifest.xml:21:13-37
+568        <service
+568-->[io.nlopez.smartlocation:library:3.2.11] /home/simge/.gradle/caches/transforms-2/files-2.1/ffac352c03d186daf3d8ea9c1c319c62/jetified-library-3.2.11/AndroidManifest.xml:22:9-24:40
+569            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+569-->[io.nlopez.smartlocation:library:3.2.11] /home/simge/.gradle/caches/transforms-2/files-2.1/ffac352c03d186daf3d8ea9c1c319c62/jetified-library-3.2.11/AndroidManifest.xml:23:13-127
+570            android:exported="false" />
+570-->[io.nlopez.smartlocation:library:3.2.11] /home/simge/.gradle/caches/transforms-2/files-2.1/ffac352c03d186daf3d8ea9c1c319c62/jetified-library-3.2.11/AndroidManifest.xml:24:13-37
+571        <service
+571-->[io.nlopez.smartlocation:library:3.2.11] /home/simge/.gradle/caches/transforms-2/files-2.1/ffac352c03d186daf3d8ea9c1c319c62/jetified-library-3.2.11/AndroidManifest.xml:25:9-27:40
+572            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+572-->[io.nlopez.smartlocation:library:3.2.11] /home/simge/.gradle/caches/transforms-2/files-2.1/ffac352c03d186daf3d8ea9c1c319c62/jetified-library-3.2.11/AndroidManifest.xml:26:13-120
+573            android:exported="false" />
+573-->[io.nlopez.smartlocation:library:3.2.11] /home/simge/.gradle/caches/transforms-2/files-2.1/ffac352c03d186daf3d8ea9c1c319c62/jetified-library-3.2.11/AndroidManifest.xml:27:13-37
+574        <!--
+575             FirebaseMessagingService performs security checks at runtime,
+576             but set to not exported to explicitly avoid allowing another app to call it.
+577        -->
+578        <service
+578-->[com.google.firebase:firebase-messaging:20.1.2] /home/simge/.gradle/caches/transforms-2/files-2.1/22f7bfb0d57115e6f8dedeb47f1a9413/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:28:9-34:19
+579            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+579-->[com.google.firebase:firebase-messaging:20.1.2] /home/simge/.gradle/caches/transforms-2/files-2.1/22f7bfb0d57115e6f8dedeb47f1a9413/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:29:13-82
+580            android:exported="false" >
+580-->[com.google.firebase:firebase-messaging:20.1.2] /home/simge/.gradle/caches/transforms-2/files-2.1/22f7bfb0d57115e6f8dedeb47f1a9413/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:30:13-37
+581            <intent-filter android:priority="-500" >
+581-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:316:7-318:23
+582                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+582-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:317:9-69
+582-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:317:17-67
+583            </intent-filter>
+584        </service>
+585        <service
+585-->[com.google.firebase:firebase-messaging:20.1.2] /home/simge/.gradle/caches/transforms-2/files-2.1/22f7bfb0d57115e6f8dedeb47f1a9413/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:35:9-41:19
+586            android:name="com.google.firebase.components.ComponentDiscoveryService"
+586-->[com.google.firebase:firebase-messaging:20.1.2] /home/simge/.gradle/caches/transforms-2/files-2.1/22f7bfb0d57115e6f8dedeb47f1a9413/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:36:13-84
+587            android:directBootAware="true"
+587-->[com.google.firebase:firebase-common:19.3.0] /home/simge/.gradle/caches/transforms-2/files-2.1/955946d37b74008adf11d97768857681/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+588            android:exported="false" >
+588-->[com.google.firebase:firebase-messaging:20.1.2] /home/simge/.gradle/caches/transforms-2/files-2.1/22f7bfb0d57115e6f8dedeb47f1a9413/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:37:13-37
+589            <meta-data
+589-->[com.google.firebase:firebase-messaging:20.1.2] /home/simge/.gradle/caches/transforms-2/files-2.1/22f7bfb0d57115e6f8dedeb47f1a9413/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:38:13-40:85
+590                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+590-->[com.google.firebase:firebase-messaging:20.1.2] /home/simge/.gradle/caches/transforms-2/files-2.1/22f7bfb0d57115e6f8dedeb47f1a9413/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:39:17-119
+591                android:value="com.google.firebase.components.ComponentRegistrar" />
+591-->[com.google.firebase:firebase-messaging:20.1.2] /home/simge/.gradle/caches/transforms-2/files-2.1/22f7bfb0d57115e6f8dedeb47f1a9413/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:40:17-82
+592            <meta-data
+592-->[com.google.firebase:firebase-datatransport:17.0.3] /home/simge/.gradle/caches/transforms-2/files-2.1/6ddd2e5de740657fc08f85edd8d07771/firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+593                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+593-->[com.google.firebase:firebase-datatransport:17.0.3] /home/simge/.gradle/caches/transforms-2/files-2.1/6ddd2e5de740657fc08f85edd8d07771/firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+594                android:value="com.google.firebase.components.ComponentRegistrar" />
+594-->[com.google.firebase:firebase-datatransport:17.0.3] /home/simge/.gradle/caches/transforms-2/files-2.1/6ddd2e5de740657fc08f85edd8d07771/firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+595            <meta-data
+595-->[com.google.android.gms:play-services-measurement-api:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/684dd9a72b80ee91cf375bf65b27d030/play-services-measurement-api-17.2.3/AndroidManifest.xml:30:13-32:85
+596                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+596-->[com.google.android.gms:play-services-measurement-api:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/684dd9a72b80ee91cf375bf65b27d030/play-services-measurement-api-17.2.3/AndroidManifest.xml:31:17-139
+597                android:value="com.google.firebase.components.ComponentRegistrar" />
+597-->[com.google.android.gms:play-services-measurement-api:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/684dd9a72b80ee91cf375bf65b27d030/play-services-measurement-api-17.2.3/AndroidManifest.xml:32:17-82
+598            <meta-data
+598-->[com.google.firebase:firebase-iid:20.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/5b9262f48326953de891c5964d0376a8/firebase-iid-20.1.1/AndroidManifest.xml:32:13-34:85
+599                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+599-->[com.google.firebase:firebase-iid:20.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/5b9262f48326953de891c5964d0376a8/firebase-iid-20.1.1/AndroidManifest.xml:33:17-96
+600                android:value="com.google.firebase.components.ComponentRegistrar" />
+600-->[com.google.firebase:firebase-iid:20.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/5b9262f48326953de891c5964d0376a8/firebase-iid-20.1.1/AndroidManifest.xml:34:17-82
+601            <meta-data
+601-->[com.google.firebase:firebase-installations:16.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/4867e80d375c85d9674c1e8b402cead3/firebase-installations-16.0.0/AndroidManifest.xml:17:13-19:85
+602                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+602-->[com.google.firebase:firebase-installations:16.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/4867e80d375c85d9674c1e8b402cead3/firebase-installations-16.0.0/AndroidManifest.xml:18:17-127
+603                android:value="com.google.firebase.components.ComponentRegistrar" />
+603-->[com.google.firebase:firebase-installations:16.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/4867e80d375c85d9674c1e8b402cead3/firebase-installations-16.0.0/AndroidManifest.xml:19:17-82
+604        </service>
+605        <service
+605-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/simge/.gradle/caches/transforms-2/files-2.1/87b100cdd22021badfed59b3b6331cae/transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+606            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+606-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/simge/.gradle/caches/transforms-2/files-2.1/87b100cdd22021badfed59b3b6331cae/transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+607            android:exported="false" >
+607-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/simge/.gradle/caches/transforms-2/files-2.1/87b100cdd22021badfed59b3b6331cae/transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+608            <meta-data
+608-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/simge/.gradle/caches/transforms-2/files-2.1/87b100cdd22021badfed59b3b6331cae/transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+609                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+609-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/simge/.gradle/caches/transforms-2/files-2.1/87b100cdd22021badfed59b3b6331cae/transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+610                android:value="cct" />
+610-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/simge/.gradle/caches/transforms-2/files-2.1/87b100cdd22021badfed59b3b6331cae/transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+611        </service>
+612        <service
+612-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/simge/.gradle/caches/transforms-2/files-2.1/d57dbd54fc4d648aefdc203c8e39914b/transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+613            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+613-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/simge/.gradle/caches/transforms-2/files-2.1/d57dbd54fc4d648aefdc203c8e39914b/transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+614            android:exported="false"
+614-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/simge/.gradle/caches/transforms-2/files-2.1/d57dbd54fc4d648aefdc203c8e39914b/transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+615            android:permission="android.permission.BIND_JOB_SERVICE" >
+615-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/simge/.gradle/caches/transforms-2/files-2.1/d57dbd54fc4d648aefdc203c8e39914b/transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+616        </service>
+617
+618        <receiver
+618-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/simge/.gradle/caches/transforms-2/files-2.1/d57dbd54fc4d648aefdc203c8e39914b/transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+619            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+619-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/simge/.gradle/caches/transforms-2/files-2.1/d57dbd54fc4d648aefdc203c8e39914b/transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+620            android:exported="false" />
+620-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/simge/.gradle/caches/transforms-2/files-2.1/d57dbd54fc4d648aefdc203c8e39914b/transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+621        <receiver
+621-->[com.google.firebase:firebase-iid:20.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/5b9262f48326953de891c5964d0376a8/firebase-iid-20.1.1/AndroidManifest.xml:37:9-44:20
+622            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+622-->[com.google.firebase:firebase-iid:20.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/5b9262f48326953de891c5964d0376a8/firebase-iid-20.1.1/AndroidManifest.xml:38:13-78
+623            android:exported="true"
+623-->[com.google.firebase:firebase-iid:20.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/5b9262f48326953de891c5964d0376a8/firebase-iid-20.1.1/AndroidManifest.xml:39:13-36
+624            android:permission="com.google.android.c2dm.permission.SEND" >
+624-->[com.google.firebase:firebase-iid:20.1.1] /home/simge/.gradle/caches/transforms-2/files-2.1/5b9262f48326953de891c5964d0376a8/firebase-iid-20.1.1/AndroidManifest.xml:40:13-73
+625            <intent-filter>
+625-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:297:7-299:23
+626                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+626-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:287:9-72
+626-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:287:17-70
+627            </intent-filter>
+628        </receiver>
+629
+630        <activity
+630-->[com.google.android.gms:play-services-base:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/e23fcc6256e65e57aefe59561bba4606/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+631            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+631-->[com.google.android.gms:play-services-base:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/e23fcc6256e65e57aefe59561bba4606/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+632            android:exported="false"
+632-->[com.google.android.gms:play-services-base:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/e23fcc6256e65e57aefe59561bba4606/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+633            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+633-->[com.google.android.gms:play-services-base:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/e23fcc6256e65e57aefe59561bba4606/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+634
+635        <receiver
+635-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:29:9-33:20
+636            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+636-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:30:13-85
+637            android:enabled="true"
+637-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:31:13-35
+638            android:exported="false" >
+638-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:32:13-37
+639        </receiver>
+640        <receiver
+640-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:34:9-42:20
+641            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+641-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:35:13-100
+642            android:enabled="true"
+642-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:36:13-35
+643            android:exported="true"
+643-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:37:13-36
+644            android:permission="android.permission.INSTALL_PACKAGES" >
+644-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:38:13-69
+645            <intent-filter>
+645-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:257:7-259:23
+646                <action android:name="com.android.vending.INSTALL_REFERRER" />
+646-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:258:9-71
+646-->/home/simge/StorylyApp/android/app/src/main/AndroidManifest.xml:258:17-68
+647            </intent-filter>
+648        </receiver>
+649
+650        <service
+650-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:44:9-47:40
+651            android:name="com.google.android.gms.measurement.AppMeasurementService"
+651-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:45:13-84
+652            android:enabled="true"
+652-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:46:13-35
+653            android:exported="false" />
+653-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:47:13-37
+654        <service
+654-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:48:9-52:72
+655            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+655-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:49:13-87
+656            android:enabled="true"
+656-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:50:13-35
+657            android:exported="false"
+657-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:51:13-37
+658            android:permission="android.permission.BIND_JOB_SERVICE" />
+658-->[com.google.android.gms:play-services-measurement:17.2.3] /home/simge/.gradle/caches/transforms-2/files-2.1/a48b7ffc47bf5fe9872438ed0c145a83/play-services-measurement-17.2.3/AndroidManifest.xml:52:13-69
+659
+660        <provider
+660-->[com.google.firebase:firebase-common:19.3.0] /home/simge/.gradle/caches/transforms-2/files-2.1/955946d37b74008adf11d97768857681/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+661            android:name="com.google.firebase.provider.FirebaseInitProvider"
+661-->[com.google.firebase:firebase-common:19.3.0] /home/simge/.gradle/caches/transforms-2/files-2.1/955946d37b74008adf11d97768857681/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+662            android:authorities="storyly.app.firebaseinitprovider"
+662-->[com.google.firebase:firebase-common:19.3.0] /home/simge/.gradle/caches/transforms-2/files-2.1/955946d37b74008adf11d97768857681/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+663            android:exported="false"
+663-->[com.google.firebase:firebase-common:19.3.0] /home/simge/.gradle/caches/transforms-2/files-2.1/955946d37b74008adf11d97768857681/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+664            android:initOrder="100" />
+664-->[com.google.firebase:firebase-common:19.3.0] /home/simge/.gradle/caches/transforms-2/files-2.1/955946d37b74008adf11d97768857681/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+665
+666        <meta-data
+666-->[com.google.android.gms:play-services-basement:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/e700dc55c80700061daf51263caa6e82/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+667            android:name="com.google.android.gms.version"
+667-->[com.google.android.gms:play-services-basement:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/e700dc55c80700061daf51263caa6e82/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+668            android:value="@integer/google_play_services_version" />
+668-->[com.google.android.gms:play-services-basement:17.0.0] /home/simge/.gradle/caches/transforms-2/files-2.1/e700dc55c80700061daf51263caa6e82/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+669
+670        <provider
+670-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/simge/.gradle/caches/transforms-2/files-2.1/21cdc1d3bb78deb592a0a162d0eb4962/jetified-crashlytics-2.10.1/AndroidManifest.xml:19:9-23:38
+671            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+671-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/simge/.gradle/caches/transforms-2/files-2.1/21cdc1d3bb78deb592a0a162d0eb4962/jetified-crashlytics-2.10.1/AndroidManifest.xml:20:13-75
+672            android:authorities="storyly.app.crashlyticsinitprovider"
+672-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/simge/.gradle/caches/transforms-2/files-2.1/21cdc1d3bb78deb592a0a162d0eb4962/jetified-crashlytics-2.10.1/AndroidManifest.xml:21:13-75
+673            android:exported="false"
+673-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/simge/.gradle/caches/transforms-2/files-2.1/21cdc1d3bb78deb592a0a162d0eb4962/jetified-crashlytics-2.10.1/AndroidManifest.xml:22:13-37
+674            android:initOrder="90" />
+674-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/simge/.gradle/caches/transforms-2/files-2.1/21cdc1d3bb78deb592a0a162d0eb4962/jetified-crashlytics-2.10.1/AndroidManifest.xml:23:13-35
+675    </application>
+676
+677</manifest>

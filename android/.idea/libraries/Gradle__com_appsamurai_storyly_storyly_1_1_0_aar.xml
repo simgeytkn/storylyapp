@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.appsamurai.storyly:storyly:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d8a561d42e8d3259fe2434be61dfdd08/storyly-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d8a561d42e8d3259fe2434be61dfdd08/storyly-1.1.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.appsamurai.storyly/storyly/1.1.0/13ef81b5306cd3ba3a463aed1344e435c0e344c4/storyly-1.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.appsamurai.storyly/storyly/1.1.0/98b938ffec2f449817b5e5e88043463b10f72c38/storyly-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
